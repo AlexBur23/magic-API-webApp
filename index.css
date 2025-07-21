@@ -1,9 +1,12 @@
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 10px;
-    background-color: lightblue;
+    background-color: #AAB7B8;
+}
+
+.header {
+    justify-content: center;
 }
 
 main{
@@ -13,9 +16,9 @@ main{
 
 .search-bar{
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     padding:20px;
-    background-color: pink;
+    background-color: #2E4053;
 }
 
 .card-and-card-statistics-flex{
@@ -23,16 +26,17 @@ main{
     display: flex;
     flex-direction: row;
     border: 3px solid;
-    justify-content: space-evenly;
-    background-color: yellowgreen;
+    justify-content: space-between;
+    background-color: slategray;
 }
 
 .card-face{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
-    background-color: whitesmoke; 
+    background-color: #1C2833; 
     border: 30px solid black;
     justify-self: center;
+
 }
 
 .card-statistics{
@@ -44,5 +48,9 @@ main{
     display: flex;
     justify-content: center;
     background-color: pink;
+}
+
+.card-stats{
+    padding-bottom: 50px;
 }
 

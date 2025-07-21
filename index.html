@@ -8,23 +8,26 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to this Magic the Gathering Search Tool</h1>
+        <h1>MTG Search Tool</h1>
     </header>
     <main>
         <div class="search-bar">
-            <input type="text" id="search-bar" placeholder="Enter card name">
-            <button type="button">Go!</button>
+            <input id="userInput" id="search-bar" placeholder="Enter card name">
+            <label for="sort-options">Sort by:</label>
+            <select name="sort-options" id="sort-options">
+                <option value="A-Z">A-Z</option>
+                <option value="Value(USD)">USD</option>
+                <option value="EDHRecRank">EDHRecRank</option>
+            </select>
+            <button id="button">Go!</button>
         </div>
         <div class="card-and-card-statistics-flex">
             <div class="#card-face">
-                <p>This is the box that displays the card</p>
+                <p id = "user-Card">this is the box that will display the card face</p>
             </div>
             <div class ="#card-statistics">
-                <p>This is the box that display the card characteristics</p>
+                <p id = "card-stats">This is the box that display the card characteristics</p>
             </div>
-        </div>
-        <div class="#additional-information">
-            <p>this is the box that give further info about the card  </p>
         </div>
     </main>
     <script src="index.js"></script>
